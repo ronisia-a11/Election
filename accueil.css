@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #d0e3d5;
+}
+
+.color-bars {
+    height: 15px;
+    display: flex;
+}
+
+.color-bars::before, .color-bars::after, .color-bars {
+    content: '';
+    flex: 1;
+}
+
+/*.color-bars {
+    background: linear-gradient(to right, green 33.33%, red 33.33%, red 66.66%, yellow 66.66%);
+} */
+
+/* Tricolore Bande */
+.tricolor {
+    display: flex;
+    height: 80px;
+}
+
+.green {
+    background-color: green;
+    flex: 1;
+}
+
+.red {
+    background-color: red;
+    flex: 1;
+    position: relative;
+}
+
+.yellow {
+    background-color: yellow;
+    flex: 1;
+}
+
+/* Étoile dorée */
+.star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: gold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 50px;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+  
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: rgb(223, 60, 15); /* Couleur au survol */
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+}
+  
+.hero-text {
+    max-width: 50%;
+}
+  
+.hero-text h2 span {
+    color: rgb(223, 60, 15);
+    font-weight: bold;
+}
+  
+.hero-h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+  
+.buttons {
+    margin-top: 30px;
+}
+  
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    margin-right: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.btn-primary {
+    background-color: white;
+    color: #11a73c;
+}
+
+.btn-secondary {
+    background-color: white;
+    border: 2px solid white;
+    color: #11a73c;
+}
+  
+.hero-image img {
+    width: 550px;
+    height: 300px;
+}

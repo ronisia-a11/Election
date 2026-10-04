@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription Électorale</title>
+  <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🗳 ElectionsCam</div>
+    <ul class="nav-links">
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="inscription.html" class="active">Inscription</a></li>
+      <li><a href="candidat.html">Candidat</a></li>
+      <li><a href="vote.html">Vote</a></li>
+      <li><a href="resultats.html">Resultats</a></li>
+      <li><a href="aide.html">Aide</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-container">
+    <h2>Formulaire d'inscription électorale</h2>
+    <form id="voteForm">
+      <label>Nom :</label>
+      <input type="text" name="nom" required>
+      <small id="nom-error" class="error-msg"></small>
+
+      <label>Prénom :</label>
+      <input type="text" name="prenom" required>
+      <small id="pre-error" class="error-msg"></small>
+
+      <label>Âge :</label>
+      <input type="number" name="age" id="age" required>
+      <small id="ageError" class="error-msg"></small>
+
+      <label>Nationalité :</label>
+      <input type="text" name="nationalite" id="nationalite" required>
+      <small id="natError" class="error-msg"></small>
+
+      <label>Date de naissance :</label>
+      <input type="date" name="date_naissance" required>
+
+      <label>Lieu de naissance :</label>
+      <input type="text" name="lieu_naissance" required>
+      <small id="lieunais-error" class="error-msg"></small>
+
+      <label>Lieu de résidence :</label>
+      <input type="text" name="residence" required>
+      <small id="lieuresi-error" class="error-msg"></small>
+
+      <label>Profession :</label>
+      <input type="text" name="profession" required>
+      <small id="prof-error" class="error-msg"></small>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+
+  <div id="message-container"></div>
+
+  <script src="inscription.js"></script>
+</body>
+</html>
+
+

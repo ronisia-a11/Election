@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>🗳 ElectionsCam</title>
+    <link rel="stylesheet" href="resultats.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">🗳 ElectionsCam</div>
+        <ul class="nav-links">
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="inscription.html" class="active">Inscription</a></li>
+          <li><a href="candidat.html">Candidat</a></li>
+          <li><a href="vote.html">Vote</a></li>
+          <li><a href="resultats.html">Resultats</a></li>
+          <li><a href="aide.html">Aide</a></li>
+        </ul>
+    </nav>
+    <h1>Résultats</h1>
+    <p>Nombre de personnes inscrites : <span id="personnes"></span></p>
+    <p>Nombre d'hommes inscrits : <span id="hommes"></span></p>
+    <p>Nombre de femmes inscrites : <span id="femmes"></span></p>
+
+    <script>
+      const personnesSpan = document.getElementById('personnes');
+      const hommesSpan = document.getElementById('hommes');
+      const femmesSpan = document.getElementById('femmes');
+
+      personnesSpan.innerText = localStorage.getItem('personnes') || 0;
+      hommesSpan.innerText = localStorage.getItem('hommes') || 0;
+      femmesSpan.innerText = localStorage.getItem('femmes') || 0;
+    </script>
+
+  </body>
+</html>
